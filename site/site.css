@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: "Libertinus Serif OTF";
+  src: url("assets/fonts/libertinus/LibertinusSerif-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Libertinus Serif";
   src: url("assets/fonts/libertinus/LibertinusSerif-Semibold.woff2") format("woff2");
   font-weight: 600;
@@ -70,8 +77,9 @@ a {
 
 .hero h1 {
   margin: 0;
-  font: 400 clamp(52px, 6vw, 82px)/1 "Libertinus Serif", Georgia, serif;
-  font-variant: small-caps;
+  font: 400 clamp(52px, 6vw, 82px)/1 "Libertinus Serif OTF", Georgia, serif;
+  font-variant-caps: small-caps;
+  font-synthesis: none;
 }
 
 .hero p {
